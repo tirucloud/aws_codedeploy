@@ -40,6 +40,9 @@ sudo systemctl restart codedeploy-agent
 4. CodeDeploy>>>>>>>Applications>>>>create Application>>>>Create deployment group
 
 5. Goto Pipeline >>>> create pipeline.
+
+## TIPS FOR TROUBLE SHOOTING
+### Check logs
 ```bash
 less /var/log/aws/codedeploy-agent/codedeploy-agent.log
 ```
