@@ -21,21 +21,21 @@ sudo systemctl restart codedeploy-agent
 1. Name: demo-ec2-to-s3-and-codedeploy
    - chose ec2 service
    - attatch below policies
-       - AmazonEC2RoleforAWSCodeDeploy
-       - AmazonS3FullAccess
+      - AmazonEC2RoleforAWSCodeDeploy
+      - AmazonS3FullAccess
    - Attach 1st role to All EC2 instances
 
 
 2. Name: demo-code-deploy-to-other-services
    - chose codedeploy
    - attatch below policy
-       - AWSCodeDeployRole
+      - AWSCodeDeployRole
 
 3. aws configure
-  - Accesskey:
-  - Secretkey
-  - Region:us-east-1
-  - JSON
+  - Accesskey : ***************
+  - Secretkey : ***************
+  - Region : us-east-1
+  - Output: JSON
 
 4. CodeDeploy>>>>>>>Applications>>>>create Application>>>>Create deployment group
 
