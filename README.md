@@ -34,7 +34,7 @@ sudo systemctl restart codedeploy-agent
 3. aws configure
   - Accesskey : ***************
   - Secretkey : ***************
-  - Region : us-east-1
+  - Region : ap-south-1
   - Output: JSON
 
 4. CodeDeploy>>>>>>>Applications>>>>create Application>>>>Create deployment group
