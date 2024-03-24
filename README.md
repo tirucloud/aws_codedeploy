@@ -18,7 +18,7 @@ sudo systemctl restart codedeploy-agent
 
 # Create 2 Roles
 
-1. Name can be any: devops-ec2-to-codedeploy-role
+1. Name: demo-ec2-to-s3-and-codedeploy
 
 chose ec2 service
 
@@ -27,13 +27,26 @@ attatch below policies
 AmazonEC2RoleforAWSCodeDeploy
 AmazonS3FullAccess
 
-2. Name can be any: devops_code_deploy_to_others
+Attach 1st role to All EC2 instances
+
+
+2. Name: demo-code-deploy-to-other-services
 
 chose codedeploy
 
 attatch below policy
 
 AWSCodeDeployRole
+
+aws configure
+Accesskey:
+Secretkey
+Region:us-east-1
+JSON
+
+CodeDeploy>>>>>>>Applications>>>>create Application>>>>Create deployment group
+
+Goto Pipeline >>>> create pipeline.
 
 
 less /var/log/aws/codedeploy-agent/codedeploy-agent.log
